@@ -11,7 +11,6 @@ terraform {
   }
   required_version = "~> 1.0"
 
-
   backend "remote" {
     organization = "ACG-Terraform-Demo-Ch5"
 
@@ -21,12 +20,9 @@ terraform {
   }
 }
 
-
 provider "aws" {
   region = "us-east-1"
 }
-
-
 
 resource "random_pet" "sg" {}
 
